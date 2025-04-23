@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BensPlayground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Karibu Tujibambe!</h1>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>Lets Have some fun! 🎈</h2>
+            <button id="clickButton">Click Me!</button>
+            <div id="hoverArea">Hover Over Me</div><br><br>
+            <input type="text" id="keypressInput" placeholder="Type Something Here">
+            <p id="keypressDisplay"></p>
+            <button id="doubleClickButton">SECRET!</button>
+            <div id="longPressArea">Long Press Me (Secret!)</div>
+            <p id="longPressMessage" class="hidden"></p>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>Ready to Play 🎮</h2>
+            <p id="changingText">What are you doing?</p>
+            <button id="changeButton">No Questions</button>
+
+            <div class="image-gallery">
+                <img src="https://images.pexels.com/photos/5244261/pexels-photo-5244261.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1" class="active">
+                <img src="https://images.pexels.com/photos/8259340/pexels-photo-8259340.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2">
+                <img src="https://images.pexels.com/photos/3144296/pexels-photo-3144296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+                <div class="gallery-controls">
+                    <button id="prevImage">Previous</button>
+                    <button id="nextImage">Next</button>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">Content for Section 1.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">Content for Section 2.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">Content for Section 3.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Usidanganye Sawa Nani📋✅</h2>
+            <form id="myForm">
+                <div>
+                    <label for="requiredField">Name:</label>
+                    <input type="text" id="requiredField" required>
+                    <p class="error-message" id="requiredFieldError"></p>
+                </div>
+                <div>
+                    <label for="emailField">Email:</label>
+                    <input type="email" id="emailField">
+                    <p class="error-message" id="emailFieldError"></p>
+                </div>
+                <div>
+                    <label for="passwordField">Password (min 8 chars):</label>
+                    <input type="password" id="passwordField">
+                    <p class="error-message" id="passwordFieldError"></p>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formFeedback" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toka hapa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
